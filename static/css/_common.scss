@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+// 浮动、清除浮动
+.clearfix{
+  @include clearFix;
+  zoom: 1;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+// .arrow-l{
+//   &:after{
+//       @include arrow(5px, 5px, 5px);
+//       @include arrow-l();
+//     }
+// }
+
+// .arrow-r{
+//   &:after{
+//       @include arrow(5px, 5px, 5px);
+//       @include arrow-r();
+//     }
+// }
+
+// 页面基础公共样式
+html{
+  color:#333;
+
+  body{
+    min-width:1000px;
+    max-width:1920px;
+    margin:0 auto;
+    overflow-x:auto;
+  }
+  .hidden{
+    display:none;
+  }
+  .disabled{
+    cursor:not-allowed !important;
+  }
+  .iconfont{
+    line-height:1;
+    vertical-align:middle;
+    font-size:inherit;
+    font-style:normal;
+    color:inherit;
+  }
+}
